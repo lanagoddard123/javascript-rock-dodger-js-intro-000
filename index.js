@@ -54,7 +54,9 @@ function createRock(x) {
   // Hmmm, why would we have used `var` here?
   var top = 0
 
-  rock.style.top = top
+  rock.style.top = `${top}px`;
+  window.requestAnimationFrame(moveRock);
+    }
 
   /**
    * Now that we have a rock, we'll need to append
