@@ -68,24 +68,22 @@ moveRock()
    * seems like a good pace.)
    */
   function moveRock() {
+    
+    rock.style.top = `${top += 2}px`;
+
+    
     // implement me!
     // (use the comments below to guide you!)
     /**
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
-
-     if(checkCollision()=true){
-       endGame()
+var check = window.checkCollision(rock)
+     if(check===true){
+       window.endGame()
      }
 
-function move(rock) {
-  var top = 0
-
-  function step() {
-    rock.style.top = `${top += 2}px`
-
-    if (top < 200) {
+    if (top < 375) {
       window.requestAnimationFrame(step)
     }
   }
