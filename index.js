@@ -52,41 +52,7 @@ function createRock(x) {
   rock.style.left = `${x}px`
 
   // Hmmm, why would we have used `var` here?
-  var top = 0
-
-  rock.style.top = top
-GAME.appendChild(rock)
-
-
-    // implement me!
-    // (use the comments below to guide you!)
-    /**
-     * If a rock collides with the DODGER,
-     * we should call endGame()
-     */
-var check = window.checkCollision(rock)
-     if(check===true){
-       window.endGame()
-     }
-
-    if (top < 375) {
-      window.requestAnimationFrame(step)
-    }
-  }
-
-  window.requestAnimationFrame(step)
-}
-
-
-    /**
-     * Otherwise, if the rock hasn't reached the bottom of
-     * the GAME, we want to move it again.
-     */
-
-    /**
-     * But if the rock *has* reached the bottom of the GAME,
-     * we should remove the rock from the DOM
-     */
+  
   }
 
   // We should kick of the animation of the rock around here
