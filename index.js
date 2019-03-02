@@ -52,7 +52,7 @@ function createRock(x) {
   rock.style.left = `${x}px`
 
   // Hmmm, why would we have used `var` here?
-  
+
   }
 
   // We should kick of the animation of the rock around here
