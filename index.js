@@ -77,21 +77,21 @@ GAME.appendChild(rock)
      if(checkCollision()=true){
        endGame()
      }
-     
+
 function move(rock) {
   var top = 0
- 
+
   function step() {
     rock.style.top = `${top += 2}px`
- 
+
     if (top < 200) {
       window.requestAnimationFrame(step)
     }
   }
- 
+
   window.requestAnimationFrame(step)
 }
-     
+
 
     /**
      * Otherwise, if the rock hasn't reached the bottom of
