@@ -68,10 +68,10 @@ moveRock()
    * seems like a good pace.)
    */
   function moveRock() {
-    
+
     rock.style.top = `${top += 2}px`;
 
-    
+
     // implement me!
     // (use the comments below to guide you!)
     /**
